@@ -16,8 +16,7 @@ def validate_guess(guess):
 
 def game(min_range, max_range):
     number = random.randint(min_range, max_range)
-
-
+    guesses = 0
 while True:
     #Get users guess
     guess = input("Enter your guess: ")
@@ -38,7 +37,17 @@ while True:
     guess = int(input("Guess again: "))
     guesses += 1
 
-play_again = "y"
+    if guess == answer:
+        print("Congratulations! You guessed the correct number in", guesses, "tries.")
+      return True
+    elif guess > answer:
+        print("Too high! Guess again.")
+    else:
+        print("Too low! Guess again.")
+      return False
+
+
+play_again == "y"
 while play_again =="y":
     print("Enter the range of the number you want to guess. ")
     min_range = int(input("Enter the minimum range:"))
@@ -48,4 +57,3 @@ while play_again =="y":
     else:
         print("Somthing went wrong! Please try again.")
 
-print("Congratulations! You guessed the correct number in", guesses, "tries.")
