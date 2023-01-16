@@ -1,10 +1,18 @@
 import random
 
+print("Welcome to my guessing game!")
+
+min_range = int(input("Enter a minimum number: "))
+max_range = int(input("Enter a maximum number: "))
+answer = random.randint(min_range, max_range)
+guesses = 0
+
 def validate_guess(guess):
     if not guess.isdigit():
        return False
     else:
       return True
+
 
 def game(min_range, max_range):
     number = random.randint(min_range, max_range)
@@ -28,3 +36,10 @@ while True:
     if hint.lower() == "yes":
         if answer % 2 == 0:
             print("Hint: the answer is even.")
+        else:
+            print("Hint: the answer is odd.")
+
+    guess = int(input("Guess again: "))
+    guesses += 1
+
+print("Congratulations! You guess the correct number in", guesses, "tries.")
