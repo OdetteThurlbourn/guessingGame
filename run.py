@@ -43,12 +43,11 @@ def game(min_range, max_range):
             print("Too low! Guess again.")
     return False
 
-play_again == "y"
 while play_again == "y":
     print("Enter the range of the number you want to guess. ")
     min_range = int(input("Enter the minimum range:"))
-    max_range = int(Input("Enter the maximum range:"))
+    max_range = int(input("Enter the maximum range:"))
     if game(min_range, max_range):
         play_again = input("Do you want to play again? (y/n) ")
     else:
-        print("Somthing went wrong! Please try again.")
+        print("Something went wrong! Please try again.")
