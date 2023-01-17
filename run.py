@@ -2,10 +2,13 @@ import random
 
 print("Welcome to my guessing game!")
 
-min_range = int(input("Enter a minimum number: "))
-max_range = int(input("Enter a maximum number: "))
-answer = random.randint(min_range, max_range)
-guesses = 0
+
+play_again = "y"
+while play_again == "y":
+    min_range = int(input("Enter a minimum number: "))
+    max_range = int(input("Enter a maximum number: "))
+    answer = random.randint(min_range, max_range)
+    guesses = 0
 
 # Making sure guess value is an integer
 def validate_guess(guess):
@@ -26,6 +29,15 @@ def game(min_range, max_range):
         guess = int(guess)
         guesses += 1
 
+        if guess == answer:
+            print("Congratulations! You guessed the correct number in", guesses, "tries.")
+            play_again = input("Do you want to play again? (y/n) ")
+            break
+        elif guess > answer:
+            print("Too high! Guess again.")
+        else:
+            print("Too low! Guess again.")
+            
         hint = input("Would you like a hint? (y/n)")
 
         if hint.lower() == "y":
@@ -34,15 +46,7 @@ def game(min_range, max_range):
             else:
                 print("Hint: the answer is odd.")
 
-        if guess == answer:
-            print("Congratulations! You guessed the correct number in", guesses, "tries.")
-            return True
-        elif guess > answer:
-            print("Too high! Guess again.")
-        else:
-            print("Too low! Guess again.")
-    return False
-
+play_again ="y"
 while play_again == "y":
     print("Enter the range of the number you want to guess. ")
     min_range = int(input("Enter the minimum range:"))
