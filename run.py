@@ -2,11 +2,6 @@ import random
 
 print("Welcome to my guessing game!")
 
-# min_range = int(input("Enter a minimum number: "))
-# max_range = int(input("Enter a maximum number: ")) 
-# answer = random.randint(min_range, max_range)
-# guesses = 0
-
 # Making sure guess value is an integer
 def validate_guess(guess):
     if not guess.isdigit():
@@ -48,7 +43,5 @@ while play_again == "y":
     print("Enter the range of the number you want to guess. ")
     min_range = int(input("Enter the minimum range:"))
     max_range = int(input("Enter the maximum range:"))
-    if game(min_range, max_range):
-        play_again = input("Do you want to play again? (y/n) ")
-    else:
-        print("Something went wrong! Please try again.")
+    game(min_range, max_range)
+    play_again = input("Do you ant to play again? (y/n)")
