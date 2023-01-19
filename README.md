@@ -47,7 +47,7 @@ Code Institute - Tutor Scott
 # Testing and solving
 _____________________________
 
-### Problem
+### Problem 001
 __________
 
  * Implement functionality to provide additional hints to the user upon unsuccessful attempts to correctly answer the question, following the initial hint, with a maximum of three additional hint opportunities.
@@ -56,11 +56,31 @@ __________
 ![hintAgainAfterInitial3Guesses](https://user-images.githubusercontent.com/108287233/213493384-91ef7558-5ad8-47a0-a740-2846ebfa4996.png)
 
 
-### Solution
+### Solution 001
 _____________________________
-*  The code checks if the player has used up 3 guesses and have not used the first hint yet. If that's the case, it asks the player if they would like a hint by prompting them to enter "y" or "n" for yes or no. If the player enters "y", the hint_used variable is set to True, and the code then checks if the answer is even or odd, and gives the player a hint accordingly. Similarly, it checks if the player has used up 6 guesses and haven't used the second hint yet, and if so, it again prompts the player if they would like a hint and if yes, gives a hint that the answer is a number.
+*  The code checks if the player has used up 3 guesses and have not used the first hint yet. If that's the case, it asks the player if they would like a hint by prompting them to enter "y" for yes and 'n' for no. If the player enters "y", the `hint_used` variable is set to True, and the code then checks if the answer is even or odd, and gives the player a hint accordingly. Similarly, it checks if the player has used up 6 guesses and haven't used the second hint yet, and if so, it again prompts the player if they would like a hint and if yes, gives a hint that the answer is a number.
 
 ![hintAgainCode](https://user-images.githubusercontent.com/108287233/213494452-e9836770-4ba5-4468-abc1-9bc75dcbfa15.png)
+
+### Problem 002
+_________________________
+
+* After a user has failed 3 times to achieve a correct answer the game will prompt the user if they would like a hint.  After a futher 3 more tires the game will again ask the user if they would like a hint.  The game therafter runs into infinity as the `if` statement applied to break the loop did not fire. 
+
+
+![hintUsed2](https://user-images.githubusercontent.com/108287233/213497217-136b833d-ba89-4da0-8ee2-fba40658dddf.png)
+
+
+### Solution 002
+__________________
+
+* By using formatted strings to help the values stand out in the terminal, in this manner one can determine where the issue might lie. 
+* In this case the `hint_used` statement was proving `False` when infact it needed to be proven `True`.  This will allow the all three conditions to be met and the `if` statement to `break` and the game will end.
+
+
+
+
+
 
 
 
