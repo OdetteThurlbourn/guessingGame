@@ -43,6 +43,8 @@ __________________________________
 ### Second hint
 ![secondHint](https://user-images.githubusercontent.com/108287233/213516448-70660c1e-045d-472e-8725-559469a34d55.png)
 
+## End game with 'n' prompt
+![no](https://user-images.githubusercontent.com/108287233/213519501-cdf0b3cc-2ca2-47d9-af49-2f200d85f3be.png)
 
 
 ## Built with
@@ -95,6 +97,11 @@ _______________________________
 2. Warning that a line of Python code should not be longer than 79 chatacters.
 3. Add whitespace between operators.
 
+## Bugs
+_______________________________________________
+* The game will continue to run after the second hint. 
+Once the user has failed 3 attempts a hint will be provided, this will allow 3 more turns before a second hint is provided.  
+Thereafter the game will run continually until the user gets a correct answer.  They will be presesnted with a congratulations message and asked if they would like to play again.
 
 ## Deployment
 ___________________________________
