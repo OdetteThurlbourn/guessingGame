@@ -23,22 +23,20 @@ def game(min_range, max_range):
 
         if guess == number:
             print("Congratulations! You guessed the correct number in", guesses, "tries.")
-            # play_again = input("Do you want to play again? (y/n) ")
             break
         elif guess > number:
             print("Too high! Guess again.")
         else:
             print("Too low! Guess again.")
-            
-        hint = input("Would you like a hint? (y/n)")
 
-        if hint.lower() == "y":
-            if number % 2 == 0:
-                print("Hint: the answer is even.")
-            else:
-                print("Hint: the answer is odd.")
-    return play_again
-
+        if guesses == 3:
+            hint = input("Would you like a hint? (y/n)")
+            if hint.lower() == "y":
+                if number % 2 == 0:
+                    print("Hint: the answer is even.")
+                else:
+                    print("Hint: the answer is odd.")
+       
 play_again ="y"
 while play_again == "y":
     print("Enter the range of the number you want to guess. ")
