@@ -49,7 +49,7 @@ def game(min_range, max_range):
             hint = input("Would you like another hint? (y/n)")
             if hint.lower() == "y":
                 hint_used2 = True
-                print("Hint: the answer is between", min_range, "and", max_range)
+                print("Hint: the answer is a number! \U0001f60a")
 
     return correct_guesses, total_tries, hint_used
 
