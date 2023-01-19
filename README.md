@@ -26,7 +26,22 @@ __________________________________
                   in order to have a game today and not next week!"**
 13. The game will then swap the numbers around and the game will commence. 
 
+### User enters minimum and maximum range
+![enterMinMax](https://user-images.githubusercontent.com/108287233/213516858-66ad230b-d0cb-445f-8040-dea5ada98794.png)
+
+### Reverse values if user enter incorrectly
 ![gamePlayMinMaxReverse](https://user-images.githubusercontent.com/108287233/213515754-51d793a8-6b1c-404f-8a01-fe1504fd9575.png)
+
+### Initial clues
+![clues](https://user-images.githubusercontent.com/108287233/213517087-3dbf61a0-211f-418a-845b-bb307f526637.png)
+
+
+### First hint
+![firstHint](https://user-images.githubusercontent.com/108287233/213516118-f7778efe-39b0-4603-b946-67419392577c.png)
+
+
+### Second hint
+![secondHint](https://user-images.githubusercontent.com/108287233/213516448-70660c1e-045d-472e-8725-559469a34d55.png)
 
 
 
