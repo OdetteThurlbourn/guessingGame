@@ -26,17 +26,16 @@ __________________________________
                   in order to have a game today and not next week!"**
 13. The game will then swap the numbers around and the game will commence. 
 
+![gamePlayMinMaxReverse](https://user-images.githubusercontent.com/108287233/213515754-51d793a8-6b1c-404f-8a01-fe1504fd9575.png)
+
+
+
 ## Built with
 ______________________________
 
 - **[Python](https://www.python.org/)**
 - **[Flask](https://flask.palletsprojects.com/en/2.2.x/)**
-
-## Deployment
-___________________________________
-
-The app is deployed with **[Heroku](https://dashboard.heroku.com/apps/guessinggamepy/deploy/github)**
-
+_________________
 
 # Testing and solving
 _____________________________
@@ -82,8 +81,26 @@ _______________________________
 3. Add whitespace between operators.
 
 
+## Deployment
+___________________________________
+
+The app is deployed with **[Heroku](https://dashboard.heroku.com/apps/guessinggamepy/deploy/github)**
+
+1. Open an account with Heroku
+2. On the homepage navigate to the "New" tab and select "Create new app"
+3. Add a name in the "App name" field and choose the appropriate region
+4. Select "Create app" this will bring you to the "Deploy" page 
+5. Navigate to the "Deployment method" and select "GitHub"
+6. In the "repo-name" field enter the name of the repo you would like to deploy
+7. If the repo reflects in the dropdown menu, "connect" the repo
+8. Scroll down and slect the 'main' branch
+9. Select "Deploy Branch"
+10. Wait a few moments while the repo is being deployed
+11. Select "Deploy to Heroku"
+________________________________________
 
 ## Credit
+_____
 **[guessinggamepy](https://guessinggamepy.herokuapp.com/)** - initial work
 
 Spencer Barriball
