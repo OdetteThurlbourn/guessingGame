@@ -45,3 +45,6 @@ while play_again == "y":
     max_range = int(input("Enter the maximum range:"))
     game(min_range, max_range)
     play_again = input("Do you ant to play again? (y/n)")
+    if play_again == 'n':
+        print("Thank you for playing. Goodbye!")
+        break
