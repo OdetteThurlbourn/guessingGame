@@ -4,8 +4,7 @@ _________________________________________
 ![pexels-black-ice-1314543](https://user-images.githubusercontent.com/108287233/213469981-2d843716-1d00-455c-a195-46be5c0bf4fa.jpg)
 ![responsePP3](https://user-images.githubusercontent.com/108287233/213483220-a3ff5669-80d9-4bfe-a626-bec4e7f04295.png)
 
-
-### This is a guessing game written in Python.
+_______________________________________________
 
 A simple web-based guessing game built using Python and Flask that generates a random number and prompts the user to guess the number. The program will then check if the user's guess is correct and provide feedback on whether the guess is too high or too low. The user can continue guessing until they correctly guess the number. The program can also keep track of the number of guesses the user has made and provide a message of congratulations upon guessing the correct number.
 
@@ -21,7 +20,11 @@ __________________________________
 8. If after 3 more tries you cannot guess the number the game will spill out yet another hint.
 9. If you do guess the correct number a message of congratulations will appear.
 10. The game will then prompt you to either play again or end the game using the 'y' for yes and 'n' for no. Press enter to confirm.
-11. Te game will restart if you slected 'y' or end with a goodbye message if you slected 'n'.
+11. The game will restart if you selected 'y' or end with a goodbye message if you slected 'n'.
+12. If the user would enter the numbers in the wromg order, for example: a 10 for minimum and a 5 for maximum, the game will tell display the following message: **"You really need to know what minimum and maximum means,
+                  just to help you I am going to swap the numbers around
+                  in order to have a game today and not next week!"**
+13. The game will then swap the numbers around and the game will commence. 
 
 ## Built with
 ______________________________
