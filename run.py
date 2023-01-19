@@ -50,15 +50,22 @@ def game(min_range, max_range):
             if hint.lower() == "y":
                 hint_used2 = True
                 print("Hint: the answer is a number! \U0001f60a")
-                if guesses == 9 and hint_used == 2 and guess != number:
-                    print("Sorry! Game Over!")
-                    break
+
+        if guesses == 9 and hint_used == hint_used2 and guess != number:
+            print("Sorry! Game Over!")
+            break
+        print(f"Guesses: {guesses}")
+        print(f"Hint Used: {hint_used}")
+        print(f"Guess: {guess}")
+        print(f"Number: {number}")
+        print(f"hint_used2: {hint_used2}")
+            
 
     return correct_guesses, total_tries, hint_used
 
 # The code below was in collaboration with Mentor Spencer Barriball
 if __name__ == '__main__':
-    print("Welcome to my guessing game!")
+    print("Welcome to my guessing game! Try to guess the number and win....nothing!")
     answer = "y"
     correct_guesses = 0
     total_tries = 0
@@ -101,3 +108,4 @@ if __name__ == '__main__':
         if answer == 'n':
             print("Thank you for playing. Goodbye!")
             break
+
