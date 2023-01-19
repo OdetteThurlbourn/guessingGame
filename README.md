@@ -23,3 +23,58 @@ __________________________________
 10. The game will then prompt you to either play again or end the game using the 'y' for yes and 'n' for no. Press enter to confirm.
 11. Te game will restart if you slected 'y' or end with a goodbye message if you slected 'n'.
 
+## Built with
+______________________________
+
+- **[Python](https://www.python.org/)**
+- **[Flask](https://flask.palletsprojects.com/en/2.2.x/)**
+
+## Deployment
+___________________________________
+
+The app is deployed with **[Heroku](https://dashboard.heroku.com/apps/guessinggamepy/deploy/github)**
+
+
+
+## Credit
+**[guessinggamepy](https://guessinggamepy.herokuapp.com/)** - initial work
+
+Spencer Barriball
+
+Code Institute - Tutor Scott
+
+
+# Testing and solving
+_____________________________
+
+### Problem
+__________
+
+ * Implement functionality to provide additional hints to the user upon unsuccessful attempts to correctly answer the question, following the initial hint, with a maximum of three additional hint opportunities.
+![walkThroughHintAgainAfter3Tries](https://user-images.githubusercontent.com/108287233/213493027-cb18268c-f5d6-4b90-900f-85757d9f8cf4.png)
+
+![hintAgainAfterInitial3Guesses](https://user-images.githubusercontent.com/108287233/213493384-91ef7558-5ad8-47a0-a740-2846ebfa4996.png)
+
+
+### Solution
+_____________________________
+*  The code checks if the player has used up 3 guesses and have not used the first hint yet. If that's the case, it asks the player if they would like a hint by prompting them to enter "y" or "n" for yes or no. If the player enters "y", the hint_used variable is set to True, and the code then checks if the answer is even or odd, and gives the player a hint accordingly. Similarly, it checks if the player has used up 6 guesses and haven't used the second hint yet, and if so, it again prompts the player if they would like a hint and if yes, gives a hint that the answer is a number.
+
+![hintAgainCode](https://user-images.githubusercontent.com/108287233/213494452-e9836770-4ba5-4468-abc1-9bc75dcbfa15.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
