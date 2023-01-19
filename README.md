@@ -35,15 +35,6 @@ ___________________________________
 The app is deployed with **[Heroku](https://dashboard.heroku.com/apps/guessinggamepy/deploy/github)**
 
 
-
-## Credit
-**[guessinggamepy](https://guessinggamepy.herokuapp.com/)** - initial work
-
-Spencer Barriball
-
-Code Institute - Tutor Scott
-
-
 # Testing and solving
 _____________________________
 
@@ -78,8 +69,23 @@ __________________
 * In this case the `hint_used` statement was proving `False` when infact it needed to be proven `True`.  This will allow the all three conditions to be met and the `if` statement to `break` and the game will end.
 
 
+### ***[PEP8](https://www.pythonchecker.com/)*** Python Validator Testing
+_______________________________
+![pep8](https://user-images.githubusercontent.com/108287233/213509983-db4ad1fb-e0db-4410-884f-3ba4e8b9ad28.png)
+
+* The code initially made out with a 87% Exellent rating.
+1. The suggestions to imporve the code revolved arounf adding whitespace.
+2. Warning that a line of Python code should not be longer than 79 chatacters.
+3. Add whitespace between operators.
 
 
+
+## Credit
+**[guessinggamepy](https://guessinggamepy.herokuapp.com/)** - initial work
+
+Spencer Barriball
+
+Code Institute - Tutor Scott
 
 
 
