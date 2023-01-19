@@ -50,6 +50,9 @@ def game(min_range, max_range):
             if hint.lower() == "y":
                 hint_used2 = True
                 print("Hint: the answer is a number! \U0001f60a")
+                if guesses == 9 and hint_used == 2 and guess != number:
+                    print("Sorry! Game Over!")
+                    break
 
     return correct_guesses, total_tries, hint_used
 
