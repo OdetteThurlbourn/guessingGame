@@ -63,7 +63,7 @@ ______________________________
 - **[Flask](https://flask.palletsprojects.com/en/2.2.x/)**
 _________________
 
-# Testing and solving
+# Bugs and Testing
 _____________________________
 
 ### Problem 001
@@ -104,15 +104,15 @@ _______________________________
 ![pep8](https://user-images.githubusercontent.com/108287233/213509983-db4ad1fb-e0db-4410-884f-3ba4e8b9ad28.png)
 
 * The code initially made out with a 87% Exellent rating.
-1. The suggestions to imporve the code revolved arounf adding whitespace.
+1. The suggestions to imporve the code revolved around adding whitespace.
 2. Warning that a line of Python code should not be longer than 79 chatacters.
 3. Add whitespace between operators.
 
 ## Bugs
 _______________________________________________
-* The game will continue to run after the second hint. 
-Once the user has failed 3 attempts a hint will be provided, this will allow 3 more turns before a second hint is provided.  
-Thereafter the game will run continually until the user gets a correct answer.  They will be presesnted with a congratulations message and asked if they would like to play again.
+* When a hint prompt is presented to the user, it is possible to input any value other than 'y' and the game will interpret this as a decline of the hint option and proceed without providing a hint to the player.
+
+![bug](https://user-images.githubusercontent.com/108287233/213657975-2318141f-773e-43cb-b5a7-586416a37c8a.png)
 
 ## Deployment
 ___________________________________
