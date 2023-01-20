@@ -60,7 +60,6 @@ __________________________________
 ______________________________
 
 - **[Python](https://www.python.org/)**
-- **[Flask](https://flask.palletsprojects.com/en/2.2.x/)**
 _________________
 
 # Bugs and Testing
@@ -132,9 +131,16 @@ The app is deployed with **[Heroku](https://dashboard.heroku.com/apps/guessingga
 11. Select "Deploy to Heroku"
 ________________________________________
 
+## Built with
+______________________________
+
+- **[Python](https://www.python.org/)**
+
+
+
 ## Credit
 _____
-**[guessinggamepy](https://guessinggamepy.herokuapp.com/)** - initial work
+
 
 Spencer Barriball - Mentor
 
