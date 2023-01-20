@@ -55,12 +55,11 @@ __________________________________
 ## End game with 'n' prompt
 ![no](https://user-images.githubusercontent.com/108287233/213519501-cdf0b3cc-2ca2-47d9-af49-2f200d85f3be.png)
 
+# Planning
+__________________
+The basic structure was laid out first on paper and through more online research and the help of Lucid a diagram app, I was able to map out the initial focus for the game.
+![diagram](https://user-images.githubusercontent.com/108287233/213665156-f73eb2b5-0157-426d-ad26-cd77e2d41f87.png)
 
-## Built with
-______________________________
-
-- **[Python](https://www.python.org/)**
-_________________
 
 # Bugs and Testing
 _____________________________
