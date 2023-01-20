@@ -1,7 +1,6 @@
 # Command Line Interface Python Guessing Game
 _________________________________________
 
-![pexels-black-ice-1314543](https://user-images.githubusercontent.com/108287233/213469981-2d843716-1d00-455c-a195-46be5c0bf4fa.jpg)
 ![responsePP3](https://user-images.githubusercontent.com/108287233/213483220-a3ff5669-80d9-4bfe-a626-bec4e7f04295.png)
 
 _______________________________________________
@@ -125,10 +124,11 @@ ________________________________________
 _____
 **[guessinggamepy](https://guessinggamepy.herokuapp.com/)** - initial work
 
-Spencer Barriball
+Spencer Barriball - Mentor
 
 Code Institute - Tutor Scott
 
+**[Jamal](https://codereview.stackexchange.com/questions/69333/number-guessing-game-with-maximum-and-minimum-values)** - **[StackExchange](https://stackexchange.com/)**
 
 
 
