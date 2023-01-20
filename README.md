@@ -127,7 +127,7 @@ The app is deployed with **[Heroku](https://dashboard.heroku.com/apps/guessingga
 8. Scroll down and slect the 'main' branch
 9. Select "Deploy Branch"
 10. Wait a few moments while the repo is being deployed
-11. Select "Deploy to Heroku"
+11. Select to "view" deployed app
 ________________________________________
 
 ## Built with
