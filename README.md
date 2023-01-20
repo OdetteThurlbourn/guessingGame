@@ -5,7 +5,7 @@ _________________________________________
 
 _______________________________________________
 
-A simple web-based guessing game built using Python and Flask that generates a random number and prompts the user to guess the number. The program will then check if the user's guess is correct and provide feedback on whether the guess is too high or too low. The user can continue guessing until they correctly guess the number. The program can also keep track of the number of guesses the user has made and provide a message of congratulations upon guessing the correct number.
+A simple web-based guessing game built using Python that generates a random number and prompts the user to guess the number. The program will then check if the user's guess is correct and provide feedback on whether the guess is too high or too low. The user can continue guessing until they correctly guess the number. The program can also keep track of the number of guesses the user has made and provide a message of congratulations upon guessing the correct number.
 
 ## How to Play
 __________________________________
