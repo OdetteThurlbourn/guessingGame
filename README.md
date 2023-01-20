@@ -26,21 +26,31 @@ __________________________________
 13. The game will then swap the numbers around and the game will commence. 
 
 ### User enters minimum and maximum range
-![enterMinMax](https://user-images.githubusercontent.com/108287233/213516858-66ad230b-d0cb-445f-8040-dea5ada98794.png)
+![enterMinMax](https://user-images.githubusercontent.com/108287233/213653249-2161fd75-0fa9-4708-bbe8-266b61269388.png)
 
 ### Reverse values if user enter incorrectly
 ![gamePlayMinMaxReverse](https://user-images.githubusercontent.com/108287233/213515754-51d793a8-6b1c-404f-8a01-fe1504fd9575.png)
 
-### Initial clues
-![clues](https://user-images.githubusercontent.com/108287233/213517087-3dbf61a0-211f-418a-845b-bb307f526637.png)
+### Only enter answers within the set range
+![invalidRange](https://user-images.githubusercontent.com/108287233/213654262-f2150edb-ded7-4e47-af4f-f92c8c4b22a4.png)
 
+### Only intergers are valid - The game can only accept number values
+![enterNumber001](https://user-images.githubusercontent.com/108287233/213653803-9d082578-e456-4fe2-9a02-621ebcc3ad8a.png)
+![validNumbers](https://user-images.githubusercontent.com/108287233/213653958-a0a7d557-30e7-41a9-a4a7-93f9d4874b60.png)
 
-### First hint
-![firstHint](https://user-images.githubusercontent.com/108287233/213516118-f7778efe-39b0-4603-b946-67419392577c.png)
+### Initial clues - Number enterd is too high or too low
+![oddOrEven](https://user-images.githubusercontent.com/108287233/213652964-6572436b-1ae6-42f7-ab24-be38d4a33764.png)
 
+### First hint - Is the number odd or even?
+![oddOrEven](https://user-images.githubusercontent.com/108287233/213652988-df119ce9-9546-4bfa-97cf-fe5a856b8571.png)
 
-### Second hint
-![secondHint](https://user-images.githubusercontent.com/108287233/213516448-70660c1e-045d-472e-8725-559469a34d55.png)
+### Second hint - The answer is a number!
+![secondHint](https://user-images.githubusercontent.com/108287233/213653116-75d7a4eb-d5b8-44df-961c-d80be237805a.png)
+
+### Guess counter - The game will keep track of your guesses
+
+![countGuess](https://user-images.githubusercontent.com/108287233/213653447-d493beb5-5c7d-4523-bd4b-804e03d9109a.png)
+
 
 ## End game with 'n' prompt
 ![no](https://user-images.githubusercontent.com/108287233/213519501-cdf0b3cc-2ca2-47d9-af49-2f200d85f3be.png)
@@ -67,7 +77,7 @@ __________
 
 ### Solution 001
 _____________________________
-*  The code checks if the player has used up 3 guesses and have not used the first hint yet. If that's the case, it asks the player if they would like a hint by prompting them to enter "y" for yes and 'n' for no. If the player enters "y", the `hint_used` variable is set to True, and the code then checks if the answer is even or odd, and gives the player a hint accordingly. Similarly, it checks if the player has used up 6 guesses and haven't used the second hint yet, and if so, it again prompts the player if they would like a hint and if yes, gives a hint that the answer is a number.
+*  This code segment is responsible for determining if and when to provide hints to the player during the course of the guessing game. It evaluates the player's progress by checking if they have used up three guesses and have not yet utilized the first hint option. If this criteria is met, the player is prompted to request a hint by entering "y" for yes or "n" for no. If the player chooses to receive a hint, the variable tracking the use of hints is set to true, and the code proceeds to determine if the answer is even or odd, providing a corresponding hint accordingly. The same process is repeated when the player reaches six guesses without utilizing the second hint option. The code then prompts the player for a hint and provides a hint that the answer is a number.
 
 ![hintAgainCode](https://user-images.githubusercontent.com/108287233/213494452-e9836770-4ba5-4468-abc1-9bc75dcbfa15.png)
 
@@ -84,7 +94,9 @@ _________________________
 __________________
 
 * By using formatted strings to help the values stand out in the terminal, in this manner one can determine where the issue might lie. 
-* In this case the `hint_used` statement was proving `False` when infact it needed to be proven `True`.  This will allow the all three conditions to be met and the `if` statement to `break` and the game will end.
+The solution was to place an `exit()` statement atthe very end of the cone inplace of a `break` statement.  An additional `if` statement was used to break out of the `while loop` after 9 failed attempts at guessing the correct answer. 
+
+![breakLoop](https://user-images.githubusercontent.com/108287233/213656209-80432d39-717c-4f1f-b327-353e1de48cc4.png)
 
 
 ### ***[PEP8](https://www.pythonchecker.com/)*** Python Validator Testing
